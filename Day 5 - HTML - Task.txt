@@ -43,9 +43,6 @@ The style attribute is used to apply inline CSS styling.
 The hidden attribute hides an element from the webpage.
 These attributes improve usability and presentation.
 
-
-
-
 5.Create hyperlinks with href. Practice absolute links (to external websites) and relative links (to local files) ?
 
 The href attribute is used in the <a> tag to create hyperlinks.
