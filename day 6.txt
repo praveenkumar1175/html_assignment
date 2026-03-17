@@ -1,0 +1,99 @@
+day 6
+
+1.Learn the purpose of <form> in HTML. Create a basic form structure with action and method ?
+
+The <form> element collects user input and sends it to a server for processing.
+It can use the action attribute to specify the server URL and method to define how data is sent (GET or POST).
+Forms are essential for login, registration, surveys, and feedback.
+Basic structure:
+
+<form action="/submit" method="post"></form>
+
+2.Practice using <input type="text">, <input type="password">, and <input type="email">. Create a login form ?
+
+Use <input type="text"> for names, <input type="password"> for secure passwords, and <input type="email"> for email validation.
+Add placeholder to show hints inside fields.
+Use required to make fields mandatory.
+Example login form:
+
+<form action="/login" method="post">
+  <input type="email" placeholder="Enter email" required>
+  <input type="password" placeholder="Enter password" required>
+  <input type="submit" value="Login">
+</form>
+
+3.Use checkboxes for multiple choices, radio buttons for single choice, and number fields for numeric input ?
+
+Checkboxes allow multiple selections; radio buttons allow only one selection.
+Number fields use <input type="number"> with min and max for range validation.
+They make forms interactive and restrict user input.
+Example: hobbies (checkbox), gender (radio), age (number).
+
+4.Learn <label> for accessibility and placeholder for hints. Connect labels with inputs using for and id ?
+
+<label> improves accessibility by linking text with inputs via for and id.
+Placeholders give hints inside input fields.
+This ensures screen readers and users understand the input purpose.
+Example:
+
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="Enter your email" required>
+
+5.Use required to make fields mandatory. Practice building a signup form where name, email, and password are required ?
+
+Required fields ensure users cannot submit incomplete forms.
+Use name, email, and password as mandatory fields.
+HTML5 automatically prevents submission if a required field is empty.
+Example:
+
+<form>
+  <input type="text" placeholder="Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+</form>
+
+6.Explore built-in HTML5 validation (email format, number range, required). Test submitting forms with incorrect data ?
+
+HTML5 validates email formats, number ranges, and required fields automatically.
+Try submitting invalid data to see browser error messages.
+Number inputs can enforce min and max values, and email inputs ensure correct format.
+This reduces the need for extra JavaScript validation.
+
+7.Build a registration form with text, email, password, gender (radio), hobbies (checkbox), age (number), and submit button. Include labels, placeholders, and validation ?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tabindex Example</title>
+</head>
+<body>
+<form action="/register" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Full Name" required><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Email" required><br><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="Password" required><br><br>
+
+  Gender:<br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  Hobbies:<br>
+  <input type="checkbox" id="reading" name="hobbies" value="reading">
+  <label for="reading">Reading</label>
+  <input type="checkbox" id="sports" name="hobbies" value="sports">
+  <label for="sports">Sports</label><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" min="10" max="100" required><br><br>
+
+  <input type="submit" value="Register">
+</form>
+</form>
+</body>
+</html>
