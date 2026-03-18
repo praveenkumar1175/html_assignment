@@ -1,0 +1,249 @@
+day 7
+
+1.Learn the difference between unordered (<ul>) and ordered (<ol>) lists. Create shopping list and steps list?
+
+The <ul> tag is used to create an unordered list with bullet points.
+The <ol> tag is used to create an ordered list with numbers or letters.
+Both lists use the <li> tag to define list items.
+Unordered lists are used when the order of items is not important.
+Ordered lists are used when the sequence or steps are important.
+For example, a shopping list uses <ul>, while instructions use <ol>.
+These tags help organize content clearly on a webpage.
+
+example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Example</title>
+</head>
+
+<body>
+
+<h2>Shopping List</h2>
+<ul>
+  <li>Milk</li>
+  <li>Bread</li>
+</ul>
+
+<h2>Daily Steps</h2>
+<ol>
+  <li>Wake up</li>
+  <li>Go to college</li>
+</ol>
+
+</body>
+</html>
+
+2.Practice using <li> inside <ul> and <ol>. Create nested lists (list inside another list)?
+
+The <li> tag is used to define list items inside <ul> or <ol>.
+Each <li> represents one item in the list.
+Lists can be nested inside another list to show sub-items.
+Nested lists improve structure and readability.
+You can place a <ul> or <ol> inside an <li>.
+This creates a hierarchical structure of information.
+Nested lists are commonly used in menus and categories.
+
+example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested List</title>
+</head>
+
+<body>
+
+<h2>Fruits List</h2>
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>
+
+3.Learn the structure of tables. Create a simple table with rows and columns ?
+
+Tables are used to display data in rows and columns.
+The <table> tag is the main container for the table.
+The <tr> tag defines a table row.
+The <td> tag is used to define table data (cells).
+Multiple rows and columns create a structured table.
+Tables are useful for displaying student data, marks, etc.
+They can be styled using CSS for better appearance.
+
+example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Example</title>
+
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h2>Student Table</h2>
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Format</th>
+  <th>Highest Score</th>
+</tr>
+
+<tr>
+  <td>Rohit</td>
+  <td>ODI</td>
+  <td>264</td>
+</tr>
+
+<tr>
+  <td>Virat</td>
+  <td>T20</td>
+  <td>122</td>
+</tr>
+
+<tr>
+  <td>Dhoni</td>
+  <td>Test</td>
+  <td>224</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+4.Add headers to tables using <th>. Compare difference between <td> and <th>?
+
+The <th> tag is used to define header cells in a table.
+The <td> tag is used to define data cells.
+Text inside <th> is bold and centered by default.
+Text inside <td> is normal and left-aligned.
+<th> is mainly used for column or row headings.
+<td> is used to display actual data values.
+Both tags are placed inside the <tr> tag.
+
+example 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Table</title>
+
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h2>Marks Table</h2>
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Marks</th>
+</tr>
+
+<tr>
+  <td>Virat</td>
+  <td>90</td>
+</tr>
+
+<tr>
+  <td>Rohit</td>
+  <td>85</td>
+</tr>
+
+<tr>
+  <td>Dhoni</td>
+  <td>80</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+5.Practice table attributes: colspan, rowspan, and add borders, cell spacing, and padding with CSS?
+
+The colspan attribute is used to merge multiple columns into one cell.
+The rowspan attribute is used to merge multiple rows into one cell.
+These attributes help create complex table layouts.
+CSS can be used to add borders, spacing, and padding.
+border adds lines around the table and cells.
+padding adds space inside the cells for better readability.
+These features improve the design and structure of tables.
+
+example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Table</title>
+
+  <style>
+    table {border-collapse: collapse;}
+    td, th {border:1px solid black; padding:10px;}
+  </style>
+
+</head>
+
+<body>
+
+<h2>Student Report</h2>
+<table>
+<tr>
+  <th rowspan="2">Name</th>
+  <th colspan="2">Marks</th>
+</tr>
+<tr>
+  <td>Maths</td>
+  <td>Science</td>
+</tr>
+</table>
+
+</body>
+</html>
