@@ -1,0 +1,73 @@
+day 8
+
+1.Style an HTML snippet using different CSS selectors                                                               2..Write CSS in styles.css to meet the following requirements:
+
+i)Use an element selector to:
+ii)Set all <p> elements' font color to #555 and line-height to 1.6.
+iii)Use a class selector for .intro to:
+
+    Set the font-style to italic.
+
+    Use a class selector for .highlight to:
+
+    Set background color to #f0f8ff and padding to 8px.
+
+    Use an ID selector for #header to:
+
+    Set text color to #2c3e50 and font-size to 32px.
+
+    Add any additional style to the .box class to:
+
+     Add a border of 1px solid #ccc and padding of 16px.?
+
+html code 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="header">Welcome to My Page</h1>
+
+<p class="intro">This is an introduction paragraph.</p>
+
+<p>This is a normal paragraph.</p>
+
+<p class="highlight">This is a highlighted paragraph.</p>
+
+<div class="box">
+    <p>This is inside a box.</p>
+</div>
+
+</body>
+</html>
+
+css code
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro {
+    font-style: italic;
+}
+
+.highlight {
+    background-color: #f0f8ff;
+    padding: 8px;
+}
+
+#header {
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
