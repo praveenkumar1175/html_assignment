@@ -1,0 +1,59 @@
+Day 10 
+
+1. Build a row or column of boxes inside a flex container and control their alignment, spacing, and layout direction using Flexbox.
+
+2. Create a web layout with a flex container that holds 3 child boxes.
+
+3. Use the following Flexbox properties to:
+
+	Display the container as a flexbox.
+
+	Set the direction (row or column).
+
+	Adjust horizontal alignment using justify-content.
+
+	Adjust vertical alignment using align-items.
+
+	Add spacing between items using gap.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Cricket Layout</title>
+
+    <style>
+        .container {
+            display: flex;             
+            flex-direction: row;       
+            justify-content: center;    
+            align-items: center;        
+            gap: 20px;             
+
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: lightgreen;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Batting</div>
+        <div class="box">Bowling</div>
+        <div class="box">Fielding</div>
+    </div>
+
+</body>
+</html>
