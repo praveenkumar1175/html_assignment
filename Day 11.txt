@@ -1,0 +1,64 @@
+Day 11
+
+1.Create a simple webpage that displays three sections, each styled using a different CSS method:
+
+i)Inline CSS ii)Internal CSS iii)External CSS
+
+2.i).Three sections are styled correctly using different methods.
+
+ii)External stylesheet is linked properly and loads without errors.
+
+iii)The layout and styling clearly differentiate the three CSS types.
+
+html page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Types Demo</title>
+
+    <link rel="stylesheet" href="file1.css">
+
+    <style>
+        .internal {
+            background-color: gold;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Players info </h1>
+
+    <div style="background-color: blue; color: white; padding: 20px; margin: 20px; border: 3px solid  gold;">
+        <h2>Rohit Sharma</h2>
+        <p>He also called hitman of the cricket</p>
+    </div>
+
+    <div class="internal">
+        <h2>Hardik Pandya</h2>
+        <p>He is the best all rounder in indian cricket team</p>
+    </div>
+
+    <div class="external">
+        <h2>Suriya kumar yadav</h2>
+        <p>the man plays 360 degree of the cricket stadium </p>
+    </div>
+
+</body>
+</html>
+
+css page
+
+.external {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid gold;
+}
