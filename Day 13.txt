@@ -1,0 +1,102 @@
+Day 13
+
+1.Colors-Change text and border colors
+
+2.Backgrounds -Set background colors and images
+
+3.Fonts-Apply different font families and sizes
+
+4.Text Styles-Use bold, italic, underline, etc.
+
+html code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 CSS Task</title>
+
+    <link rel="stylesheet" href="file1.css">
+</head>
+<body>
+
+    <h1 class="title">CSS Styling Task</h1>
+
+    <div class="box colors">
+        <h2>Sachin Tendulkar</h2>
+        <p>“Don't stop chasing your dreams, because dreams do come true.”</p>
+    </div>
+
+    <div class="box background">
+        <h2>MS Dhoni</h2>
+        <p>“You don't play for the crowd… you play for the country.”</p>
+    </div>
+
+    <div class="box fonts">
+        <h2>Virat Kohli</h2>
+        <p>“Self-belief and hard work will always earn you success.”</p>
+    </div>
+
+    <div class="box text-styles">
+        <h2>AB de Villiers</h2>
+        <p class="bold">“The more you practice, the luckier you get.”</p>
+        <p class="italic">“Champions keep playing until they get it right.”</p>
+        <p class="underline">“Every match is a chance to prove yourself.”</p>
+    </div>
+
+</body>
+</html>
+
+css code
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    color: darkblue;
+}
+
+.box {
+    padding: 20px;
+    margin: 15px 0;
+    border: 3px solid black;
+}
+
+.colors {
+    color: white;              
+    background-color: teal;   
+    border-color: red;        
+}
+
+
+.background {
+    background-color: lightyellow;
+    background-image: url("https://via.placeholder.com/300");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.fonts {
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
