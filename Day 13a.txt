@@ -1,0 +1,67 @@
+Day 13a
+
+1.Create a box that takes up 80% of the screen width but no more than 600px.
+
+2.Set a paragraph’s font size to 1.5rem and explain how it behaves on different devices.
+
+3.Use vw to make a heading that scales with screen size.
+
+4.Write a media query that changes background color below 768px.
+
+code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .box {
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: lightgreen;
+      margin: 20px auto;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 5vw;
+      text-align: center;
+    }
+
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-color: lightyellow;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>World cup 2027</h1>
+
+  <div class="box">
+    <h2>India vs Australia</h2>
+    <p>Virat Kohli played an outstanding innings and led India to victory.</p>
+  </div>
+
+  <div class="box">
+    <h2>Match Highlights</h2>
+    <p>Top batsmen and bowlers delivered excellent performances today.</p>
+  </div>
+
+</body>
+</html>
