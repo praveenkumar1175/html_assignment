@@ -1,0 +1,59 @@
+day 15
+
+1. What is JavaScript? Write a simple script.
+
+2. Add a script tag inside HTML and print 'Hello JS'.
+
+3. Log your name and age in console.
+
+4. Write single-line and multi-line comments.
+
+5. Integrate HTML with Javascript and display a body with a 'KKR' jersey color and a Box inside it with 'CSK' jersey color and apply the styles with your own creativity.
+
+
+What is JavaScript?
+
+JavaScript is a programming language used to make web pages interactive and dynamic.
+It runs in the browser and helps to control HTML and CSS.
+
+Example:
+
+Button click → action happens
+Change color → dynamically
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 CSS Task</title>
+</head>
+
+<body>
+    <h1>JS Task Output</h1>
+    <div id="box">CSK</div>
+    <script>
+
+        document.write("Hello JS <br><br>");
+        console.log("Name: Ashwin");
+        console.log("Age: 21");
+        document.body.style.backgroundColor = "purple";
+
+        let box = document.getElementById("box");
+
+        box.style.backgroundColor = "yellow";
+        box.style.color = "black";
+        box.style.width = "200px";
+        box.style.height = "200px";
+        box.style.textAlign = "center";
+        box.style.lineHeight = "200px";
+        box.style.fontSize = "30px";
+        box.style.fontWeight = "bold";
+        box.style.border = "3px solid black";
+        box.style.margin = "50px auto";
+
+    </script>
+
+</body>
+</html>
