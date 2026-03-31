@@ -1,0 +1,82 @@
+day 16
+
+1.Declare variables using var, let, and const?
+
+Variables are used to store data in JavaScript.
+var is function-scoped and can be re-declared and updated.
+let is block-scoped and can be updated but not re-declared.
+const is also block-scoped but cannot be updated or re-declared.
+Modern JavaScript mainly uses let and const.
+
+2.Create variables with string, number, boolean, null, undefined ?
+
+JavaScript supports different types of data.
+A string is used to store text values like names.
+A number is used to store numeric values like age or marks.
+A boolean represents true or false values.
+The null value represents an empty or unknown value.
+The undefined value means a variable is declared but not assigned.
+These data types are important for handling different kinds of data.
+Understanding data types helps in writing correct programs.
+
+3.Use +, -, *, /, %, ==, ===, &&, ||.?
+
+Operators are used to perform operations on values.
+Arithmetic operators like +, -, *, /, and % are used for calculations.
+The + operator adds values, while - subtracts values.
+The * operator multiplies and / divides values.
+The % operator gives the remainder.
+The == operator checks only the value.
+The === operator checks both value and data type.
+Logical operators like && and || are used to combine conditions.
+
+code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Day 16 JavaScript Output</h2>
+
+    <script>
+
+        var name = "praveen";
+        let age = 21;
+        const country = "India";
+
+        console.log(name);
+        console.log(age);
+        console.log(country);
+
+
+        var str = "Hello";       
+        var num = 10;            
+        var isStudent = true;    
+        var empty = null;        
+        var notDefined;          
+
+        console.log(str, num, isStudent, empty, notDefined);
+
+
+        console.log(10 + 5); 
+        console.log(10 - 5);  
+        console.log(10 * 5);  
+        console.log(10 / 5); 
+        console.log(10 % 3); 
+
+        console.log(10 == "10");  
+        console.log(10 === "10"); 
+
+        console.log(true && false);
+        console.log(true || false); 
+
+    </script>
+
+</body>
+</html>
