@@ -1,0 +1,125 @@
+Day 17
+
+Task 1:
+
+a. Check if a number is positive or negative.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Check Number</h2>
+
+<script>
+var num = 8;
+
+if (num > 0) {
+    document.write("The number is Positive");
+} else if (num < 0) {
+    document.write("The number is Negative");
+} else {
+    document.write("The number is Zero");
+}
+</script>
+
+</body>
+</html>
+
+Task 1:
+
+b. Create a switch to print days of the week.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var day = 1;
+
+switch(day) {
+    case 1:
+        document.write("Monday");
+        break;
+    case 2:
+        document.write("Tuesday");
+        break;
+    case 3:
+        document.write("Wednesday");
+        break;
+    case 4:
+        document.write("Thursday");
+        break;
+    case 5:
+        document.write("Friday");
+        break;
+    case 6:
+        document.write("Saturday");
+        break;
+    case 7:
+        document.write("Sunday");
+        break;
+    default:
+        document.write("Invalid day");
+}
+</script>
+
+</body>
+</html>
+
+
+Story Line 2 - Asking route to both virat and rohit
+
+b. On clicking Jack button, display the route said by virat.
+
+c. On clicking Alice button, display the route said by Rohit.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Crew Members</h2>
+
+<div id="crewDiv">
+    <ul id="crewList">
+        <li>rohit</li>
+        <li>virat</li>
+        <li>hardik</li>
+        <li>suriya</li>
+    </ul>
+</div>
+
+<button onclick="rohitRoute()">rohit</button>
+<button onclick="viratRoute()">virat</button>
+
+<p id="route"></p>
+
+<script>
+function viratRoute() {
+    document.getElementById("route").innerHTML =
+    "Virat saysTake the aggressive route, go straight and dominate the path!";
+}
+function rohitRoute() {
+    document.getElementById("route").innerHTML =
+    "Rohit says: Stay calm, take a safe route and move slowly!";
+}
+</script>
+
+</body>
+</html>
