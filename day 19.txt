@@ -1,0 +1,51 @@
+day 19
+
+1. Write a function to add two numbers ?
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(10, 5)); // Output: 15
+
+2. Write a function expression to multiply two numbers ?
+
+const multiply = function(a, b) {
+    return a * b;
+};
+
+console.log(multiply(4, 3)); // Output: 12
+
+3. Write an arrow function to subtract two numbers ?
+
+const subtract = (a, b) => {
+    return a - b;
+};
+
+console.log(subtract(8, 2)); // Output: 6
+
+4. Write a function with parameters and return a value ?
+
+function square(num) {
+    return num * num;
+}
+
+console.log(square(6)); // Output: 36
+
+5. Demonstrate global vs local scope ?
+
+
+let globalVar = "I am Global";
+
+function demo() {
+    let localVar = "I am Local";
+
+    console.log(globalVar); // Works
+    console.log(localVar);  // Works
+}
+
+demo();
+
+console.log(globalVar); // Works
+// console.log(localVar); ❌ Error (local variable not accessible)
+
