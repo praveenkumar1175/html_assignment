@@ -27,7 +27,7 @@ console.log(person.age);
 // Access using bracket notation
 console.log(person["name"]);
 
-3. 
+3. Call an object method.
 
 let person = {
     name: "Ashwin",
