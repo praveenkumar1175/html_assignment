@@ -1,0 +1,81 @@
+day 23
+
+1.Change text of an element using getElementById?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Old Text</h1>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText() {
+    document.getElementById("title").innerText = "New Text";
+}
+</script>
+
+</body>
+</html>
+
+2. Select an element and change its style ?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="para">This is a paragraph</p>
+
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+function changeStyle() {
+    let element = document.getElementById("para");
+    element.style.color = "blue";
+    element.style.backgroundColor = "yellow";
+}
+</script>
+
+</body>
+</html>
+
+3. Change content of a paragraph ?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="text">Original Content</p>
+
+<button onclick="changeContent()">Change Content</button>
+
+<script>
+function changeContent() {
+    document.getElementById("text").innerHTML = "Updated Content using JavaScript!";
+}
+</script>
+
+</body>
+</html>
+
+4. Change color and font size of text ?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hello JavaScript</p>
+
+<button onclick="changeDesign()">Change Design</button>
+
+<script>
+function changeDesign() {
+    let el = document.getElementById("demo");
+    el.style.color = "red";
+    el.style.fontSize = "30px";
+}
+</script>
+
+</body>
+</html>
