@@ -1,0 +1,78 @@
+day 25
+
+1. Rewrite code with let and const?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let and Const Example</title>
+</head>
+<body>
+
+<h2>Let and Const Demo</h2>
+
+<script>
+    const name = "Praveen";
+    let age = 21;
+
+    document.write("Before update:<br>");
+    document.write(name + " " + age + "<br>");
+
+    age = 22;
+
+    document.write("After update:<br>");
+    document.write(name + " " + age);
+</script>
+
+</body>
+</html>
+
+2. Use template literals with variables?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Literals</title>
+</head>
+<body>
+
+<h2>Template Literals Demo</h2>
+
+<script>
+    const name = "Praveen";
+    const city = "Chennai";
+    const role = "Student";
+
+    const message = `My name is ${name}. I live in ${city}. I am a ${role}.`;
+
+    document.write(message);
+</script>
+
+</body>
+</html>
+
+3.Create a function with default parameter values?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Parameters</title>
+</head>
+<body>
+
+<h2>Default Parameter Function</h2>
+
+<script>
+    function greet(name = "Guest") {
+        return `Hello, ${name}! Welcome!`;
+    }
+
+    document.write(greet("Praveen") + "<br>");
+    document.write(greet());
+</script>
+
+</body>
+</html>
