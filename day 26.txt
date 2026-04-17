@@ -1,0 +1,105 @@
+day 26
+
+1. Extract values from an array/object using destructuring ?
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Destructuring Example</title>
+</head>
+<body>
+
+<h2>Destructuring (Check Console)</h2>
+
+<script>
+
+  const marks = [85, 90, 95];
+
+  const [math, science, english] = marks;
+
+  console.log("Array Destructuring:");
+  console.log("Math:", math);
+  console.log("Science:", science);
+  console.log("English:", english);
+
+
+  const student = {
+    name: "Praveen",
+    age: 22,
+    course: "B.Tech IT"
+  };
+
+  const { name, age, course } = student;
+
+  console.log("Object Destructuring:");
+  console.log("Name:", name);
+  console.log("Age:", age);
+  console.log("Course:", course);
+
+</script>
+
+</body>
+</html>
+
+2. Copy an array using spread operator ?
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spread Operator</title>
+</head>
+<body>
+
+<h2>Spread Operator (Check Console)</h2>
+
+<script>
+  const fruits = ["Apple", "Banana", "Mango"];
+
+  const newFruits = [...fruits];
+
+
+  newFruits.push("Orange");
+
+  console.log("Original Array:", fruits);
+  console.log("Copied Array:", newFruits);
+
+  const moreFruits = ["Grapes", "Pineapple"];
+  const allFruits = [...fruits, ...moreFruits];
+
+  console.log("Merged Array:", allFruits);
+
+</script>
+
+</body>
+</html>
+
+3. Write a function using rest operator ?
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rest Operator</title>
+</head>
+<body>
+
+<h2>Rest Operator (Check Console)</h2>
+
+<script>
+  function totalMarks(...marks) {
+    let sum = 0;
+
+    for (let mark of marks) {
+      sum += mark;
+    }
+
+    return sum;
+  }
+
+  console.log("Total:", totalMarks(80, 85, 90));
+  console.log("Total:", totalMarks(70, 75));
+  console.log("Total:", totalMarks(100, 95, 90, 85));
+
+</script>
+
+</body>
+</html>
