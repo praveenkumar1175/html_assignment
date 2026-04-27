@@ -1,0 +1,34 @@
+Day 28
+
+1. Write concise arrow functions
+// Normal function
+function add(a,b){
+   return a+b;
+}
+
+// Concise arrow function
+const add = (a,b) => a + b;
+
+console.log(add(5,3)); // 8
+
+2.Create a simple class with constructor and method
+class Student {
+
+   constructor(name, age){
+      this.name = name;
+      this.age = age;
+   }
+
+   display(){
+      console.log("Name: " + this.name);
+      console.log("Age: " + this.age);
+   }
+
+}
+
+let s1 = new Student("Ashwin",21);
+s1.display();
+
+Output
+Name: Ashwin
+Age: 21
