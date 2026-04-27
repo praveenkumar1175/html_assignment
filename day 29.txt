@@ -1,0 +1,48 @@
+day 29
+
+1. Synchronous vs Asynchronous Execution
+console.log("Synchronous Start");
+
+function syncExample() {
+    console.log("Task 1");
+    console.log("Task 2");
+    console.log("Task 3");
+}
+syncExample();
+
+console.log("Asynchronous Start");
+
+setTimeout(() => {
+    console.log("This runs after 2 seconds");
+}, 2000);
+
+console.log("This prints before async task");
+Output:
+Synchronous Start
+Task 1
+Task 2
+Task 3
+Asynchronous Start
+This prints before async task
+(This runs after 2 seconds)
+2. Print a message after 2 seconds
+setTimeout(() => {
+    console.log("Hello after 2 seconds!");
+}, 2000);
+3. Print a counter every 1 second
+let count = 1;
+
+let timer = setInterval(() => {
+    console.log(count);
+    count++;
+
+    if(count > 10){
+        clearInterval(timer); // stops at 10
+    }
+}, 1000);
+Output:
+1
+2
+3
+...
+10
