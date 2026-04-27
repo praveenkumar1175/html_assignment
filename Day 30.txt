@@ -1,0 +1,74 @@
+Day 30
+
+1. Online Shopping Cart Project (Add to Cart Count Increase)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Shopping Cart</title>
+<style>
+body{
+font-family:Arial;
+text-align:center;
+}
+.product{
+border:1px solid #ccc;
+padding:20px;
+margin:20px;
+display:inline-block;
+}
+button{
+padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Online Shopping</h1>
+
+<h2>Cart Items: <span id="cartCount">0</span></h2>
+
+<div class="product">
+<h3>Shoes</h3>
+<p>₹1500</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+<h3>Watch</h3>
+<p>₹2500</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+<h3>Bag</h3>
+<p>₹1000</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<script>
+let count = 0;
+
+function addToCart(){
+count++;
+document.getElementById("cartCount").textContent = count;
+}
+</script>
+
+</body>
+</html>
+
+
+2. Function Accepting a Callback
+function greet(name, callback){
+console.log("Hello " + name);
+callback();
+}
+
+function afterGreeting(){
+console.log("Welcome to Online Shopping");
+}
+
+greet("Praveen", afterGreeting);
+Output:
+Hello Praveen
+Welcome to Online Shopping
