@@ -1,0 +1,59 @@
+Day 16 
+
+1. Declare variables using var, let, and const ?
+
+var studentName = "praveen kumar";
+let age = 21;
+const college = "adcd";
+
+console.log(studentName);
+console.log(age);
+console.log(college);
+
+
+2. Create variables with different data types ?
+
+// String
+let city = "Chennai";
+
+// Number
+let marks = 95;
+
+// Boolean
+let isPassed = true;
+
+// Null
+let futureGoal = null;
+
+// Undefined
+let salary;
+
+console.log(city);
+console.log(marks);
+console.log(isPassed);
+console.log(futureGoal);
+console.log(salary);
+
+
+// 3. Use Operators
+
+let a = 10;
+let b = 5;
+
+// Arithmetic Operators
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Multiplication:", a * b);
+console.log("Division:", a / b);
+console.log("Modulus:", a % b);
+
+// Comparison Operators
+console.log("a == b :", a == b);
+console.log("a === b :", a === b);
+
+// Logical Operators
+let x = true;
+let y = false;
+
+console.log("x && y :", x && y);
+console.log("x || y :", x || y);
